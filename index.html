@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Musinguzi Arinda | Portfolio</title>
+  <style>
+    /* General Reset */
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0a1a33, #001f4d);
+      color: #f5f5f5;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container { flex: 1; max-width: 1100px; margin: auto; padding: 2rem; }
+
+    /* Header */
+    header {
+      display:flex;
+      align-items:center;
+      gap:1.5rem;
+      margin-bottom:2rem;
+    }
+    header img {
+      width:120px; height:120px;
+      border-radius:50%;
+      border:3px solid #00aaff;
+      object-fit:cover;
+    }
+    header h1 {
+      font-size:2.5rem;
+      margin-bottom:0.3rem;
+    }
+    header p.subtitle {
+      font-size:1.1rem;
+      color:#cdd9e5;
+    }
+    .contacts {
+      margin-top:0.5rem;
+      font-size:0.95rem;
+    }
+    .contacts a {
+      margin-right:0.8rem;
+      text-decoration:none;
+      color:#00aaff;
+    }
+
+    /* Sections */
+    .section {
+      margin-top:3rem;
+    }
+    .section h2 {
+      font-size:1.8rem;
+      border-left:5px solid #00aaff;
+      padding-left:0.7rem;
+      margin-bottom:1.2rem;
+    }
+
+    /* Skills */
+    .skills { display:flex; flex-wrap:wrap; gap:2rem; }
+    .skill-group { flex:1; min-width:220px; }
+    .skill-group h3 {
+      color:#00aaff; margin-bottom:0.5rem; font-size:1.2rem;
+    }
+    .skill-group ul { list-style:none; }
+    .skill-group li { margin:0.3rem 0; }
+
+    /* Projects */
+    .projects {
+      display:grid;
+      gap:1.5rem;
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    }
+    .project {
+      background:#0d274a;
+      border:1px solid #13335c;
+      border-radius:10px;
+      padding:1.2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform:translateY(-5px);
+      box-shadow:0 6px 15px rgba(0,0,0,0.3);
+    }
+    .project h3 { margin-top:0; color:#00aaff; }
+    .project a {
+      display:inline-block;
+      margin-top:0.5rem;
+      margin-right:0.5rem;
+      text-decoration:none;
+      color:white;
+      background:#00aaff;
+      padding:0.4rem 0.9rem;
+      border-radius:5px;
+      font-size:0.9rem;
+      transition: background 0.3s ease;
+    }
+    .project a:hover { background:#008ecc; }
+
+    /* Contact */
+    #contact p a { color:#00aaff; text-decoration:none; }
+
+    /* Footer (Sticky) */
+    footer {
+      text-align:center;
+      padding:1.5rem 1rem;
+      background:#0d274a;
+      color:#aaa;
+      font-size:0.9rem;
+      margin-top:auto;
+    }
+    footer a { color:#00aaff; text-decoration:none; margin:0 0.5rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <img src="profile image.jpg" alt="Musinguzi Arinda">
+      <div>
+        <h1>Musinguzi Arinda</h1>
+        <p class="subtitle">Software engineer | Full-Stack Software Engineer | Tech Entrepreneur | Frontend Specialist |DevOps Enthusiast </p>
+        <div class="contacts">
+          📍 Kampala, Uganda | 
+          ✉️ <a href="mailto:arindamusinguzi11@gmail.com">yourname@example.com</a> |
+          <a href="https://github.com/smartmurex" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/musinguzi-arinda/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>I’m <b>Musinguzi Arinda</b>, I’m Musinguzi Arinda, a Frontend-focused Full-Stack Software Engineer and Tech Entrepreneur based in Kampala, Uganda. I specialize in building modern, responsive, and user-centered web applications that combine clean design with strong functionality.
+
+My expertise lies in frontend development—working with HTML5, CSS3, JavaScript, React, and Tailwind CSS—to create seamless, engaging user experiences. Alongside technical skills, I bring strong knowledge of version control, agile workflows, and design tools like Figma and Canva, ensuring projects are delivered with both precision and creativity.
+
+Passionate about using technology to solve real-world challenges, I enjoy transforming ideas into impactful digital solutions that empower individuals and businesses alike.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+            <li>Responsive Web Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Other Skills</h3>
+          <ul>
+            <li>Git & Version Control</li>
+            <li>Agile Development</li>
+            <li>UI/UX Prototyping (Figma, Canva)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Jhaper Fashions & Interiors</h3>
+          <p>Responsive e-commerce website showcasing fashion and interior products with a smooth shopping experience.</p>
+          <a href="https://smartmurex.github.io/Jhaper-fashions-interiors/">Live Site</a>
+          <a href="https://github.com/smartmurex/Jhaper-fashions-interiors.git">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Healthforce website</h3>
+          <p>A healthcare accessibility platform prototype improving digital health services in Africa.</p>
+          <a href="https://smartmurex.github.io/healthforce-website/">Demo</a>
+          <a href="https://github.com/smartmurex/healthforce-website.git">GitHub</a>
+        </div>
+        <div class="project">
+          <h3>Real Estate Website</h3>
+          <p>Property listing platform with interactive search filters, dynamic pricing, and a clean user interface.</p>
+          <a href="https://smartmurex.github.io/Real-Estate-website/">Live Site</a>
+          <a href="https://github.com/smartmurex/Real-Estate-website.git">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Let’s connect! I’m open to collaborations, projects, or simply a conversation.</p>
+      <p>
+        ✉️ <a href="mailto:arindamusinguzi11@gmail.com">yourname@example.com</a><br>
+        🔗 <a href="https://www.linkedin.com/in/musinguzi-arinda/" target="_blank">LinkedIn</a><br>
+        💻 <a href="https://github.com/smartmurex" target="_blank">GitHub</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Musinguzi Arinda</p>
+    <p>Thanks for visiting!</p>
+    <p>
+      <a href="https://github.com/smartmurex">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/musinguzi-arinda/">LinkedIn</a>
+    </p>
+  </footer>
+</body>
+</html>
